@@ -2,9 +2,7 @@ function searchInput() {
   const inputLocation = document.getElementById("text").value;
   const apiKey = "0c80b2b56f1943ada19100744230103";
   const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${inputLocation}&aqi=no`;
-  // console.log(apiUrl);
   const locationText = document.querySelector(".location");
-  console.dir(locationText);
   const tempShow = document.querySelector(".temp");
   const conditionTitle = document.querySelector(".title");
   const sectionMain = document.getElementsByClassName("section-main")[0];
